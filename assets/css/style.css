@@ -65,10 +65,10 @@ Table of contents
   --font-heading: "Plus Jakarta Sans", serif;
   --fontawesome: "Font Awesome 5 Pro";
   --black: #000000;
-  --dark: #1b2546;
+  --dark: #2c2052;
   --dark-secondary: #101c3d;
   --white: #ffffff;
-  --color-primary: #4c956c;
+  --color-primary: #44337a;
   --color-secondary: #1a759f;
   --color-heading: #04000b;
   --color-paragraph: #362f2f;
@@ -2196,7 +2196,7 @@ body,
 }
 
 .banner-area.banner-style-two .double-items .thumb img {
-  max-width: 160%;
+  max-width: 110%;
 }
 
 .banner-area.thumb-pos .double-items .thumb img {
@@ -7608,4 +7608,8 @@ body.bg-dark .works-process-items .item .icon i {
 
 .f-brand img {
   height: 50px;
+}
+
+.f-brand .coadun-brand-text {
+  color: var(--white);
 }
