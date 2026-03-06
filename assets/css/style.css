@@ -7613,3 +7613,16 @@ body.bg-dark .works-process-items .item .icon i {
 .f-brand .coadun-brand-text {
   color: var(--white);
 }
+
+.contact-area .bg-light form input,
+.contact-area .bg-light form textarea {
+  background: none;
+}
+
+.contact-area .bg-light form button {
+  background: var(--color-primary);
+}
+
+.contact-area .bg-light form button i {
+  background: none;
+}
