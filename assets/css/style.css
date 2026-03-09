@@ -7626,3 +7626,7 @@ body.bg-dark .works-process-items .item .icon i {
 .contact-area .bg-light form button i {
   background: none;
 }
+
+.coadun-border-radius {
+  border-radius: 10px;
+}
