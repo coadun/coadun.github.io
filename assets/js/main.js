@@ -6,10 +6,10 @@
     
 * ================================================================= */
 
-(function($) {
+(function ($) {
     "use strict";
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
 
         /* ==================================================
@@ -23,17 +23,17 @@
             live: true // act on asynchronously loaded content (default is true)
         });
         wow.init();
-        
+
         /* ==================================================
             # Banner Animation
         ===============================================*/
         function doAnimations(elems) {
             //Cache the animationend event in a variable
             var animEndEv = 'webkitAnimationEnd animationend';
-            elems.each(function() {
+            elems.each(function () {
                 var $this = $(this),
                     $animationType = $this.data('animation');
-                $this.addClass($animationType).one(animEndEv, function() {
+                $this.addClass($animationType).one(animEndEv, function () {
                     $this.removeClass($animationType);
                 });
             });
@@ -47,7 +47,7 @@
         //Animate captions in first slide on page load
         doAnimations($firstAnimatingElems);
         //Other slides to be animated on carousel slide event
-        $immortalCarousel.on('slide.bs.carousel', function(e) {
+        $immortalCarousel.on('slide.bs.carousel', function (e) {
             var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
             doAnimations($animatingElems);
         });
@@ -62,10 +62,10 @@
         /* ==================================================
             # imagesLoaded active
         ===============================================*/
-        $('#portfolio-grid,.blog-masonry').imagesLoaded(function() {
+        $('#portfolio-grid,.blog-masonry').imagesLoaded(function () {
 
             /* Filter menu */
-            $('.mix-item-menu').on('click', 'button', function() {
+            $('.mix-item-menu').on('click', 'button', function () {
                 var filterValue = $(this).attr('data-filter');
                 $grid.isotope({
                     filter: filterValue
@@ -73,7 +73,7 @@
             });
 
             /* filter menu active class  */
-            $('.mix-item-menu button').on('click', function(event) {
+            $('.mix-item-menu button').on('click', function (event) {
                 $(this).siblings('.active').removeClass('active');
                 $(this).addClass('active');
                 event.preventDefault();
@@ -100,11 +100,11 @@
         });
 
 
-         /* ==================================================
-            # Fun Factor Init
-        ===============================================*/
+        /* ==================================================
+           # Fun Factor Init
+       ===============================================*/
         $('.timer').countTo();
-        $('.fun-fact').appear(function() {
+        $('.fun-fact').appear(function () {
             $('.timer').countTo();
         }, {
             accY: -100
@@ -135,12 +135,12 @@
             fixedContentPos: false
         });
 
-        $('.magnific-mix-gallery').each(function() {
+        $('.magnific-mix-gallery').each(function () {
             var $container = $(this);
             var $imageLinks = $container.find('.item');
 
             var items = [];
-            $imageLinks.each(function() {
+            $imageLinks.each(function () {
                 var $item = $(this);
                 var type = 'image';
                 if ($item.hasClass('magnific-iframe')) {
@@ -164,7 +164,7 @@
                 },
                 type: 'image',
                 callbacks: {
-                    beforeOpen: function() {
+                    beforeOpen: function () {
                         var index = $imageLinks.index(this.st.el);
                         if (-1 !== index) {
                             this.goTo(index);
@@ -181,7 +181,7 @@
         $('.feature-carousel').owlCarousel({
             loop: true,
             nav: false,
-            margin:30,
+            margin: 30,
             dots: true,
             autoplay: true,
             items: 1,
@@ -357,7 +357,7 @@
         /* ==================================================
             Progressbar Init
          ===============================================*/
-         function animateElements() {
+        function animateElements() {
             $('.progressbar').each(function () {
                 var elementPos = $(this).offset().top;
                 var topOfWindow = $(window).scrollTop();
@@ -368,13 +368,13 @@
                     $(this).find('.circle').circleProgress({
                         // startAngle: -Math.PI / 2,
                         value: percent / 100,
-                        size : 400,
+                        size: 400,
                         thickness: 25,
                         fill: {
                             color: '#ff4450'
                         }
                     }).on('circle-animation-progress', function (event, progress, stepValue) {
-                        $(this).find('strong').text((stepValue*100).toFixed(0) + "%");
+                        $(this).find('strong').text((stepValue * 100).toFixed(0) + "%");
                     }).stop();
                 }
             });
@@ -387,48 +387,56 @@
         /* ==================================================
             Contact Form Validations
         ================================================== */
-        $('.contact-form').each(function() {
-            var formInstance = $(this);
-            formInstance.submit(function() {
 
-                var action = $(this).attr('action');
+        $('.contact-form').submit(function (e) {
+            e.preventDefault();
 
-                $("#message").slideUp(750, function() {
-                    $('#message').hide();
+            var $form = $(this);
+            var action = $form.attr('action');
+            var $submitBtn = $form.find('#submit');
+            var $statusMsg = $('#form-status');
 
-                    $('#submit')
-                        .after('<img src="assets/img/ajax-loader.gif" class="loader" />')
-                        .attr('disabled', 'disabled');
+            $statusMsg.slideUp(250);
+            $submitBtn.prop('disabled', true).html('Sending... <i class="fa fa-spinner fa-spin ms-2"></i>');
 
-                    $.post(action, {
-                            name: $('#name').val(),
-                            email: $('#email').val(),
-                            phone: $('#phone').val(),
-                            comments: $('#comments').val()
-                        },
-                        function(data) {
-                            document.getElementById('message').innerHTML = data;
-                            $('#message').slideDown('slow');
-                            $('.contact-form img.loader').fadeOut('slow', function() {
-                                $(this).remove()
-                            });
-                            $('#submit').removeAttr('disabled');
-                        }
-                    );
-                });
-                return false;
+            $.ajax({
+                url: action,
+                method: 'POST',
+                data: $form.serialize(),
+                dataType: 'json',
+                headers: {
+                    'Accept': 'application/json'
+                },
+                success: function () {
+                    $statusMsg.html('Thank you! Your message has been sent.')
+                        .css('color', 'green')
+                        .slideDown('slow');
+                    $form[0].reset();
+                    $submitBtn.prop('disabled', false)
+                        .html('Book Consultation <i class="fa fa-paper-plane ms-2"></i>');
+                },
+                error: function () {
+                    var errorMsg = 'There was a problem submitting your form. Please try again later.';
+
+                    $statusMsg.html(errorMsg)
+                        .css('color', 'red')
+                        .slideDown('slow');
+
+                    $submitBtn.prop('disabled', false)
+                        .html('Book Consultation <i class="fa fa-paper-plane ms-2"></i>');
+                }
             });
         });
 
-    }); // end document ready function
+    });
 
-	/* ==================================================
-		Preloader Init
-		===============================================*/
-		$(window).on('load', function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
+    /* ==================================================
+        Preloader Init
+        ===============================================*/
+    $(window).on('load', function () {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+    });
 
 
 })(jQuery); // End jQuery
