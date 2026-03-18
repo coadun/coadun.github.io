@@ -7630,3 +7630,15 @@ body.bg-dark .works-process-items .item .icon i {
 .coadun-border-radius {
   border-radius: 10px;
 }
+
+.form-notification-msg {
+  display: none;
+  margin-top: 12px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  background-color: var(--white);
+  border: 1px solid #e7e7e7;
+}
