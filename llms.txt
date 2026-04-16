@@ -1,0 +1,52 @@
+# Coadun
+
+> Coadun is a transformation service for Open Source-Enabled Statistical Computing Environments (SCEs), helping pharmaceutical and life sciences organisations migrate from SAS to governed, GxP-ready open-source analytics environments.
+
+Coadun is jointly delivered by Achieve Intelligence (https://www.achieveintelligence.com/) and Jumping Rivers (https://www.jumpingrivers.com/). It is not a software platform — it is a structured professional service covering the full lifecycle of an enterprise analytics transformation: discovery, design, and deployment.
+
+## What Coadun Does
+
+Coadun helps regulated organisations:
+
+- Unify SAS, R, Python and Posit (formerly RStudio) into a single governed operating model
+- Address compliance and validation concerns when adopting open-source tools in GxP settings
+- Design and implement a risk-based validation strategy for R and Python packages
+- Migrate legacy SAS code to R and Python at a sustainable pace
+- Onboard and upskill internal teams, not just install infrastructure
+- Resolve fragmented tooling, siloed workflows, and reproducibility gaps
+
+## Who It Is For
+
+- Pharmaceutical and life sciences companies
+- Mid-to-large enterprises with established SAS environments
+- Regulated industries with GxP and governance requirements
+- Organisations facing audit pressure, reproducibility gaps, or growing demand for R and Python
+
+## The Coadun Service Model
+
+The service is structured across three phases:
+
+1. **Discover** — Current-state assessment, stakeholder interviews, governance review, infrastructure evaluation, and migration roadmap development.
+2. **Design** — Environment architecture, integration specifications for legacy and modern systems, SAS-to-R/Python transition planning.
+3. **Deploy** — Prototype environment build, package governance, SOP and validation documentation, user onboarding and upskilling.
+
+Beyond deployment, Coadun also provides long-term support, targeted training, R/Python package development and qualification, and ongoing SAS migration.
+
+## Delivered By
+
+- **Achieve Intelligence** — Enterprise architecture and compliance strategy expertise.
+- **Jumping Rivers** — Open-source engineering and R/Python expertise.
+
+Together they provide the combined skillset that organisations typically lack internally during significant SCE migrations.
+
+## Key Concepts
+
+- **SCE** (Statistical Computing Environment): An enterprise analytics environment supporting regulated and non-regulated statistical workflows.
+- **GxP**: A collection of quality guidelines and regulations covering pharmaceutical manufacturing, laboratory, and clinical practices.
+- **Open source adoption in pharma**: The shift from proprietary tools (primarily SAS) to R, Python and the Posit ecosystem for statistical analysis and reporting in regulated industries.
+
+## Contact
+
+- Website: https://coadun.net/
+- Email: hello@coadun.net
+- LinkedIn: https://www.linkedin.com/company/coadun/
