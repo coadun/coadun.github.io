@@ -1,0 +1,12 @@
+# robots.txt — https://coadun.net/
+# Allow all crawlers full access
+
+User-agent: *
+Allow: /
+Disallow: /assets/Coadun Privacy Notice.docx
+
+# Primary sitemap
+Sitemap: https://coadun.net/sitemap.xml
+
+# LLM / AI crawler guidance (llms.txt convention)
+# https://coadun.net/llms.txt
