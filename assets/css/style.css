@@ -1139,6 +1139,36 @@ header
 }
 
 /* Navbar */
+
+.collapsed-contact {
+  margin-top: 25px;
+}
+
+.collapsed-contact .call {
+  display: flex;
+}
+
+.collapsed-contact .call p {
+  margin-bottom: 5px;
+  line-height: 1;
+  font-size: 14px;
+}
+
+.collapsed-contact .call i {
+  display: inline-block;
+  font-size: 40px;
+  margin-right: 15px;
+  position: relative;
+  color: var(--color-primary);
+}
+
+.collapsed-contact .call h5 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+}
+
 nav.bootsnav.navbar-default.info-topbar .navbar-header {
   display: none;
 }
