@@ -2259,43 +2259,51 @@ body,
   z-index: 1;
 }
 
-.banner-area.text-combo h2 {
+.banner-area.text-combo h2,
+.banner-area.text-combo h1 {
   font-size: 68px;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 30px;
 }
 
-.banner-area.text-combo.banner-style-two h2 {
+.banner-area.text-combo.banner-style-two h2,
+.banner-area.text-combo.banner-style-two h1 {
   line-height: 1.2;
   font-size: 70px;
 }
 
-.banner-area.text-combo.banner-style-four h2 {
+.banner-area.text-combo.banner-style-four h2,
+.banner-area.text-combo.banner-style-four h1 {
   font-size: 60px;
 }
 
-.banner-area .col-lg-10 h2 {
+.banner-area .col-lg-10 h2,
+.banner-area .col-lg-10 h1 {
   line-height: 1.1;
 }
 
-.banner-area.text-combo h2 span {
+.banner-area.text-combo h2 span,
+.banner-area.text-combo h1 span {
   font-size: 36px;
   display: block;
   font-weight: 200;
   margin-bottom: 20px;
 }
 
-.banner-area.multi-heading h2 span {
+.banner-area.multi-heading h2 span,
+.banner-area.multi-heading h1 span {
   margin-top: 25px;
   margin-bottom: 15px;
 }
 
-.banner-area.less-content h2 {
+.banner-area.less-content h2,
+.banner-area.less-content h1 {
   margin-bottom: 0;
 }
 
-.banner-area.text-combo.banner-style-five h2 {
+.banner-area.text-combo.banner-style-five h2,
+.banner-area.text-combo.banner-style-five h1 {
   background: var(--bg-gradient);
   -webkit-background-clip: text;
   background-clip: text;
@@ -2303,7 +2311,8 @@ body,
   display: inline-block;
 }
 
-.bg-dark .banner-area.text-combo.banner-style-five h2 {
+.bg-dark .banner-area.text-combo.banner-style-five h2,
+.bg-dark .banner-area.text-combo.banner-style-five h1 {
   background: linear-gradient(90deg, var(--color-primary) 0%, #e400ff 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -2311,32 +2320,38 @@ body,
   display: inline-block;
 }
 
-.banner-area.text-combo.banner-style-five h2 span {
+.banner-area.text-combo.banner-style-five h2 span,
+.banner-area.text-combo.banner-style-five h1 span {
   margin-top: 30px;
   background: transparent;
   -webkit-text-fill-color: var(--color-heading);
   font-weight: 600;
 }
 
-.bg-dark .banner-area.text-combo.banner-style-five h2 span {
+.bg-dark .banner-area.text-combo.banner-style-five h2 span,
+.bg-dark .banner-area.text-combo.banner-style-five h1 span {
   -webkit-text-fill-color: var(--white);
 }
 
-.banner-area.less-content h2 span {
+.banner-area.less-content h2 span,
+.banner-area.less-content h1 span {
   margin-top: 30px;
 }
 
-.banner-area.less-content.banner-style-three h2 span {
+.banner-area.less-content.banner-style-three h2 span,
+.banner-area.less-content.banner-style-three h1 span {
   display: block;
   margin-bottom: 40px;
 }
 
-.banner-area h2 strong {
+.banner-area h2 strong,
+.banner-area h1 strong {
   position: relative;
   z-index: 1;
 }
 
-.banner-area h2 strong::after {
+.banner-area h2 strong::after,
+.banner-area h1 strong::after {
   position: absolute;
   left: 0;
   bottom: 10px;
@@ -2569,7 +2584,8 @@ body,
   padding-right: 15%;
 }
 
-.banner-area.text-combo.banner-style-six h2 strong {
+.banner-area.text-combo.banner-style-six h2 strong,
+.banner-area.text-combo.banner-style-six h1 strong {
   background: var(--bg-gradient);
   -webkit-background-clip: text;
   background-clip: text;
@@ -2577,7 +2593,8 @@ body,
   display: inline-block;
 }
 
-.banner-area.text-combo.banner-style-six h2 strong::after {
+.banner-area.text-combo.banner-style-six h2 strong::after,
+.banner-area.text-combo.banner-style-six h1 strong::after {
   display: none;
 }
 
