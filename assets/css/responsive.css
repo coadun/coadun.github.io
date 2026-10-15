@@ -9,10 +9,12 @@
   .our-features-area .feature-items .item {
     padding: 50px 30px;
   }
-  .banner-area.text-combo h2 {
+  .banner-area.text-combo h2,
+  .banner-area.text-combo h1 {
     font-size: 50px;
   }
-  .banner-area.text-combo.banner-style-two h2 {
+  .banner-area.text-combo.banner-style-two h2,
+  .banner-area.text-combo.banner-style-two h1 {
     font-size: 50px;
   }
 }
@@ -69,7 +71,8 @@
     max-width: 100%;
   }
 
-  .banner-area.text-combo h2 {
+  .banner-area.text-combo h2,
+  .banner-area.text-combo h1 {
     line-height: 1.1;
   }
 
@@ -530,7 +533,8 @@
 
   /* Banner Area */
 
-  .banner-area .content h2 {
+  .banner-area .content h2,
+  .banner-area .content h1 {
     font-size: 36px;
   }
 
@@ -565,17 +569,20 @@
     display: block;
   }
 
-  .banner-area.text-combo h2 {
+  .banner-area.text-combo h2,
+  .banner-area.text-combo h1 {
     font-size: 36px;
     line-height: 1.2;
   }
 
-  .banner-area.text-combo h2 span {
+  .banner-area.text-combo h2 span,
+  .banner-area.text-combo h1 span {
     font-size: 30px;
     margin-bottom: 15px;
   }
 
-  .banner-area.less-content h2 span {
+  .banner-area.less-content h2 span,
+  .banner-area.less-content h1 span {
     margin-top: 20px;
   }
 
@@ -632,11 +639,13 @@
     right: 0;
   }
 
-  .banner-area.text-combo.banner-style-two h2 {
+  .banner-area.text-combo.banner-style-two h2,
+  .banner-area.text-combo.banner-style-two h1 {
     font-size: 42px;
   }
 
-  .banner-area.text-combo.banner-style-four h2 {
+  .banner-area.text-combo.banner-style-four h2,
+  .banner-area.text-combo.banner-style-four h1 {
     font-size: 42px;
   }
 
