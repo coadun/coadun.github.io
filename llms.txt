@@ -1,6 +1,6 @@
 # Coadun
 
-> Coadun is a transformation service for Open Source-Enabled Statistical Computing Environments (SCEs), helping pharmaceutical and life sciences organisations migrate from SAS to governed, GxP-ready open-source analytics environments.
+> Coadun is a transformation service for Open Source-Enabled Statistical Computing Environments (SCEs), helping pharmaceutical and life sciences organisations migrate from SAS to governed, GxP-ready open-source analytics environments that are ready for governed AI use.
 
 Coadun is jointly delivered by Achieve Intelligence (https://www.achieveintelligence.com/) and Jumping Rivers (https://www.jumpingrivers.com/). It is not a software platform — it is a structured professional service covering the full lifecycle of an enterprise analytics transformation: discovery, design, and deployment.
 
@@ -14,23 +14,25 @@ Coadun helps regulated organisations:
 - Migrate legacy SAS code to R and Python at a sustainable pace
 - Onboard and upskill internal teams, not just install infrastructure
 - Resolve fragmented tooling, siloed workflows, and reproducibility gaps
+- Bring AI assistants into the SCE in a governed, consistent way, configured per organisation or switched off where needed
+- Identify where AI can help statistical programming teams and set up the data foundations it needs
 
 ## Who It Is For
 
 - Pharmaceutical and life sciences companies
 - Mid-to-large enterprises with established SAS environments
 - Regulated industries with GxP and governance requirements
-- Organisations facing audit pressure, reproducibility gaps, or growing demand for R and Python
+- Organisations facing audit pressure, reproducibility gaps, or growing demand for R, Python and AI tools
 
 ## The Coadun Service Model
 
 The service is structured across three phases:
 
-1. **Discover** — Current-state assessment, stakeholder interviews, governance review, infrastructure evaluation, and migration roadmap development.
-2. **Design** — Environment architecture, integration specifications for legacy and modern systems, SAS-to-R/Python transition planning.
-3. **Deploy** — Prototype environment build, package governance, SOP and validation documentation, user onboarding and upskilling.
+1. **Discover** — Current-state assessment, stakeholder interviews, governance review, infrastructure evaluation, migration roadmap development, and finding where AI fits.
+2. **Design** — Environment architecture, integration specifications for legacy and modern systems, SAS-to-R/Python transition planning, and governed data flows that future AI solutions can build on.
+3. **Deploy** — Prototype environment build, package governance, SOP and validation documentation, user onboarding and upskilling, with AI assistance configured in each workspace.
 
-Beyond deployment, Coadun also provides long-term support, targeted training, R/Python package development and qualification, and ongoing SAS migration.
+Beyond deployment, Coadun also provides long-term support, targeted training (including learning R with AI assistants), R/Python package development and qualification, and ongoing SAS migration.
 
 ## Delivered By
 
@@ -43,6 +45,7 @@ Together they provide the combined skillset that organisations typically lack in
 
 - **SCE** (Statistical Computing Environment): An enterprise analytics environment supporting regulated and non-regulated statistical workflows.
 - **GxP**: A collection of quality guidelines and regulations covering pharmaceutical manufacturing, laboratory, and clinical practices.
+- **Governed AI in an SCE**: AI assistants (for example, for code generation, controlled terminology look-ups and QC support) made available inside the governed statistical computing environment, rather than set up ad hoc on individual laptops. Coadun does not sell an AI product; it builds the environment that makes AI use consistent and controllable.
 - **Open source adoption in pharma**: The shift from proprietary tools (primarily SAS) to R, Python and the Posit ecosystem for statistical analysis and reporting in regulated industries.
 
 ## Contact
